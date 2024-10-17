@@ -1,5 +1,3 @@
-# Proyecto A
-
 # Cotizacion 
 Sistema de Generación de Cotizaciones para una Tienda de Electrónica
 
