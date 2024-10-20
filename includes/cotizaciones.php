@@ -3,8 +3,8 @@ $cotizaciones = Cotizaciones::todas();
 $tokenCSRF = Utiles::obtenerTokenCSRF();
 ?>
 
-<div class="row">
-    <div class="col-sm">
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="col-sm text-center">
         <h1 style="color: #007BFF;">Cotizaciones</h1>
     </div>
 </div>
@@ -18,7 +18,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
         </p>
     </div>
     
-    <?php include_once BASE_PATH . "/includes/publicidad.php" ?>
+   
 </div>
 
 <div class="row">
