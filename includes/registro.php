@@ -5,9 +5,9 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<div class="row" style="margin-top: 1%;">
-    <div class="col-sm-12 col-lg-4 offset-lg-4">
-        <h2 style="color: #007BFF;">Registro</h2>
+<div class="row justify-content-center" style="margin-top: 1%;">
+    <div class="col-sm-12 col-lg-4 ">
+        <h2 style="color: #007BFF;text-align: center;">Registro</h2>
         <div class="alert alert-info">
             Regístrate a Sistema de Cotizaciones 
         </div>
