@@ -1,19 +1,19 @@
 ; <?php exit; ?>
 
 ; URL base del proyecto, algo como https://sitio.com
-BASE_URL = "http://localhost/cotizaciones"
+BASE_URL = "http://localhost/cotizacion"
 
 
-USUARIO_MYSQL = "root"
-PASS_MYSQL = "fquejq"
+USUARIO_MYSQL = "umg"
+PASS_MYSQL = "umg_204O0Zi9aW48"
 NOMBRE_BD_MYSQL = "cotizaciones"
-HOST_MYSQL = "localhost"
+HOST_MYSQL = "5.249.163.225"
 
 
-USUARIO_MYSQL_SESION = "root"
-PASS_MYSQL_SESION = "fquejq"
+USUARIO_MYSQL_SESION = "umg"
+PASS_MYSQL_SESION = "umg_204O0Zi9aW48"
 NOMBRE_BD_MYSQL_SESION = "cotizaciones"
-HOST_MYSQL_SESION = "localhost"
+HOST_MYSQL_SESION = "5.249.163.225"
 
 ; De Google Analytics
 ID_SEGUIMIENTO = ""
