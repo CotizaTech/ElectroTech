@@ -1,7 +1,8 @@
 ; <?php exit; ?>
 
 ; URL base del proyecto, algo como https://sitio.com
-BASE_URL = "http://localhost/cotizacion"
+;BASE_URL = "http://localhost/cotizacion"
+BASE_URL = "electrotech-hgh5dqazbrduaggm.eastus2-01.azurewebsites.net"
 
 
 USUARIO_MYSQL = "umg"
