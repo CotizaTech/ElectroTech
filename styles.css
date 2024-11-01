@@ -1,17 +1,16 @@
 body {
-    background-image: url('img/Tactic.png'); /* Ruta a tu imagen de fondo */
-    background-size: cover; /* Para cubrir toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    height: 100vh; /* Altura completa de la ventana */
-    display: flex; /* Para centrar el contenido */
-    justify-content: center; /* Alineación horizontal */
-    align-items: center; /* Alineación vertical */
-    margin: 0; /* Elimina márgenes */
+    background-image: url('img/Tactic.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    animation: fadeIn 2s ease-in-out;
 }
 
+
 #app {
-    background-color: rgba(255, 255, 255, 0.652); /* Fondo semi-transparente para el formulario */
-    padding: 5px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    
 }

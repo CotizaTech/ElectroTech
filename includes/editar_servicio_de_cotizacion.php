@@ -8,7 +8,7 @@ if (empty($_GET["idCotizacion"])) {
 }
 $servicio = Cotizaciones::obtenerServicioPorId($_GET["idServicio"]);
 if (!$servicio) {
-    exit("No existe el servicio");
+    exit("No existe el producto");
 }
 $tokenCSRF = Utiles::obtenerTokenCSRF();
 ?>
@@ -23,18 +23,18 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
         <div class="form-group">
             <label for="servicio">Servicio</label>
             <input value="<?php echo $servicio->servicio; ?>" autofocus name="servicio" autocomplete="off" required
-                   type="text" class="form-control" id="servicio" placeholder="Por ejemplo: Desarrollo de app">
+                   type="text" class="form-control" id="servicio" placeholder="Ejemplo: Impresoras">
         </div>
         <div class="form-group">
             <label for="costo">Costo</label>
             <input value="<?php echo $servicio->costo; ?>" name="costo" autocomplete="off" required type="number"
-                   class="form-control" id="costo" placeholder="Costo especificado en USD">
+                   class="form-control" id="costo" placeholder="Costo especificado en Q">
         </div>
         <div class="form-group">
             <label for="tiempoEnMinutos">Tiempo</label>
             <input value="<?php echo $servicio->tiempoEnMinutos; ?>" name="tiempoEnMinutos" autocomplete="off" required
                    type="number" class="form-control" id="tiempoEnMinutos"
-                   placeholder="Cantidad de tiempo que tomará el servicio">
+                   placeholder="Cantidad de tiempo tomará el producto">
         </div>
         <div class="form-group">
             <label for="multiplicador">Especificado en</label>

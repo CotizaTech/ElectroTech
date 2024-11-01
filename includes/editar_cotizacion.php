@@ -9,12 +9,12 @@ $clientes = Clientes::todos();
 $cotizacion = Cotizaciones::porId($_GET["id"]);
 ?>
 <div class="row">
-    <div class="col-sm">
-        <h1>Editar cotización</h1>
+    <div class="col-sm text-center">
+        <h1 style="color: #1919E6;">Editar cotización</h1>
     </div>
 </div>
 <div class="row">
-    <div class="col-sm">
+    <div class="col-sm text-center">
         <form method="post" action="<?php echo BASE_URL ?>/?p=actualizar_cotizacion">
             <input type="hidden" name="tokenCSRF" value="<?php echo $tokenCSRF ?>">
             <input type="hidden" name="id" value="<?php echo $cotizacion->id ?>">
@@ -31,7 +31,7 @@ $cotizacion = Cotizaciones::porId($_GET["id"]);
                 <label for="descripcion">Descripción de la cotización</label>
                 <input value="<?php echo htmlentities($cotizacion->descripcion) ?>" autofocus name="descripcion"
                        autocomplete="off" required type="text" class="form-control" id="descripcion"
-                       placeholder="Por ejemplo: Sistema de ventas, Construcción de casa">
+                       placeholder="Ejemplo: Sistema de ventas, Dispositivos tecnológicos">
             </div>
             <div class="form-group">
                 <label for="fecha">Fecha</label>

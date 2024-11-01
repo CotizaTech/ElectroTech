@@ -13,8 +13,8 @@ $ajustes = Ajustes::obtener();
 ?>
 <div id="app">
     <div class="row">
-        <div class="col-sm">
-            <h1>Cotización para <?php echo htmlentities($cotizacion->descripcion) ?></h1>
+        <div class="col-sm text-center">
+            <h1 style="color: #1919E6;">Cotización para <?php echo htmlentities($cotizacion->descripcion) ?></h1>
             <h4>Cliente: <?php echo htmlentities($cotizacion->razonSocial) ?></h4>
             <span class="badge badge-pill badge-success"><?php echo htmlentities($cotizacion->fecha) ?></span>
             <?php if (!empty($ajustes->mensajePresentacion)): ?>
@@ -67,7 +67,7 @@ $ajustes = Ajustes::obtener();
         </div>
     </div>
     <div class="row">
-        <div class="col-sm">
+        <div class="col-sm text-center">
             <h2>Características</h2>
             <ul class="list-group">
                 <?php foreach ($caracteristicas as $caracteristica) { ?>
@@ -94,13 +94,13 @@ $ajustes = Ajustes::obtener();
     </div>
     <div class="row d-print-block d-sm-none">
         <hr>
-        <div class="col-sm">
-            Cotización creada en línea. Crea tus cotizaciones y presupuestos online, totalmente gratis:
-            <strong>bit.ly/cotizaciones_online</strong>
+        <div class="col-sm" style="text-align: center;">
+            Cotización creada. http://electrotech.lat
+            <strong></strong>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm">
+        <div class="col-sm" style="text-align: center;">
             <button @click="imprimir" class="btn btn-success d-print-none">Imprimir</button>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <?php if (SesionService::obtenerIdUsuarioLogueado() !== NULL) { ?>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
         <a class="navbar-brand" href="<?php echo BASE_URL ?>">Cotizaciones</a>
         <button class="navbar-toggler" type="button" id="botonMenu" aria-label="Mostrar / ocultar menú">
             <span class="navbar-toggler-icon"></span>

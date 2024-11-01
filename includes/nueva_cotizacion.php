@@ -4,11 +4,11 @@ $clientes = Clientes::todos();
 ?>
 <div class="row d-flex justify-content-center align-items-center">
     <div class="col-sm text-center">
-        <h1>Nueva cotización</h1>
+        <h1 style="color: #1919E6;">Nueva cotización</h1>
     </div>
 </div>
 <div class="row">
-    <div class="col-sm">
+    <div class="col-sm text-center">
         <form method="post" action="<?php echo BASE_URL ?>/?p=guardar_cotizacion">
             <input type="hidden" name="tokenCSRF" value="<?php echo $tokenCSRF ?>">
             <div class="form-group">
@@ -22,7 +22,7 @@ $clientes = Clientes::todos();
             <div class="form-group">
                 <label for="descripcion">Descripción de la cotización</label>
                 <input autofocus name="descripcion" autocomplete="off" required type="text" class="form-control"
-                       id="descripcion" placeholder="Por ejemplo: Sistema de ventas, Construcción de casa">
+                       id="descripcion" placeholder="Ejemplo: Sistema de ventas, Dispositivos tecnológicos">
             </div>
             <div class="form-group">
                 <label for="fecha">Fecha</label>

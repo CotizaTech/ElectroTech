@@ -17,9 +17,9 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
         <div class="col-sm">
             <div class="row">
                 <div class="col-sm-8">
-                    <h3>Servicios</h3>
+                    <h3>Productos</h3>
                     <div class="alert alert-info">
-                        <p>Añada servicios que tienen un costo y precio, al final se calcularán los totales</p>
+                        <p>Añada productos que tienen un costo y precio, al final se calcularán los totales</p>
                     </div>
                     <div class="row">
                         <div class="col-sm">
@@ -27,7 +27,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
                                 <table class="table table-striped">
                                     <thead>
                                     <tr>
-                                        <th>Servicio</th>
+                                        <th>Producto</th>
                                         <th>Costo</th>
                                         <th>Tiempo</th>
                                         <th>Editar</th>
@@ -85,14 +85,14 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <h3>Agregar nuevo servicio</h3>
+                    <h3>Agregar nuevo producto</h3>
                     <form method="post" action="<?php echo BASE_URL ?>/?p=agregar_servicio_a_cotizacion">
                         <input type="hidden" name="idCotizacion" value="<?php echo $_GET["id"] ?>">
                         <input type="hidden" name="tokenCSRF" value="<?php echo $tokenCSRF ?>">
                         <div class="form-group">
-                            <label for="servicio">Servicio</label>
+                            <label for="servicio"></label>
                             <input autofocus name="servicio" autocomplete="off" required type="text"
-                                   class="form-control" id="servicio" placeholder="Por ejemplo: Desarrollo de app">
+                                   class="form-control" id="servicio" placeholder="Ejemplo: Sistema de ventas, Dispositivos tecnológicos">
                         </div>
                         <div class="form-group">
                             <label for="costo">Costo</label>
@@ -102,7 +102,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
                         <div class="form-group">
                             <label for="tiempoEnMinutos">Tiempo</label>
                             <input name="tiempoEnMinutos" autocomplete="off" required type="number" class="form-control"
-                                   id="tiempoEnMinutos" placeholder="Cantidad de tiempo que tomará el servicio">
+                                   id="tiempoEnMinutos" placeholder="Tiempo que tomará la cotizacion">
                         </div>
                         <div class="form-group">
                             <label for="multiplicador">Especificado en</label>
@@ -127,7 +127,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
                 <div class="col-sm-8">
                     <h3>Características</h3>
                     <div class="alert alert-info">
-                        <p>Las cosas que ayudan a describir la cotización</p>
+                        <p>Agregar caracteristicas</p>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-striped">
@@ -170,9 +170,9 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
                         <input type="hidden" name="idCotizacion" value="<?php echo $_GET["id"] ?>">
                         <input type="hidden" name="tokenCSRF" value="<?php echo $tokenCSRF ?>">
                         <div class="form-group">
-                            <label for="caracteristica">Característica</label>
+                            <label for="caracteristica"></label>
                             <input name="caracteristica" autocomplete="off" required type="text" class="form-control"
-                                   id="caracteristica" placeholder="Algo que ayude a describir la cotización">
+                                   id="caracteristica" placeholder="Caracteristicas">
                         </div>
                         <button type="submit" class="btn btn-primary">Guardar</button>
                     </form>

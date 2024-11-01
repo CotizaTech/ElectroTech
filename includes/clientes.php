@@ -5,14 +5,13 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
 
 <div class="row d-flex justify-content-center align-items-center">
     <div class="col-sm text-center">
-        <h1>Clientes</h1>
-        <p>Aquí aparecen los clientes</p>
+        <h1 style="color: #1919E6;">Clientes</h1>
     </div>
 </div>
 
 
 <div class="row">
-    <div class="col-sm">
+    <div class="col-sm" style="text-align: center;">
         <p>
             <a href="<?php echo BASE_URL ?>/?p=nuevo_cliente" class="btn btn-success">
                 <i class="fa fa-plus"></i> Nuevo cliente

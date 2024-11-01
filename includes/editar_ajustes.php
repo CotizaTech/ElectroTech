@@ -4,7 +4,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
 ?>
 <div class="row d-flex justify-content-center align-items-center">
     <div class="col-sm text-center">
-        <h1>Editar ajustes</h1>
+        <h1 style="color: #1919E6;">Editar ajustes</h1>
         <?php if (isset($_GET["mensaje"])) { ?>
             <div class="alert alert-<?php echo($_GET["mensaje"] == "1" ? "success" : "danger") ?>">
                 <?php if ($_GET["mensaje"] == "1"): ?>
@@ -18,7 +18,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
     </div>
 </div>
 <div class="row">
-    <div class="col-sm">
+    <div class="col-sm text-center">
         <form method="post" action="<?php echo BASE_URL ?>/?p=actualizar_ajustes">
             <input name="tokenCSRF" type="hidden" value="<?php echo $tokenCSRF ?>">
             <div class="form-group">

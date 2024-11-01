@@ -25,7 +25,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
             <label for="caracteristica">Característica</label>
             <input value="<?php echo $caracteristica->caracteristica; ?>" autofocus name="caracteristica"
                    autocomplete="off" required type="text" class="form-control" id="caracteristica"
-                   placeholder="Algo que describa a la cotización">
+                   placeholder="Agregar caracteristicas">
         </div>
         <button type="submit" class="btn btn-primary">Guardar</button>
         <a class="btn btn-success"

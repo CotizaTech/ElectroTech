@@ -5,12 +5,12 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
 
 <div class="row d-flex justify-content-center align-items-center">
     <div class="col-sm text-center">
-        <h1 style="color: #007BFF;">Cotizaciones</h1>
+        <h1 style="color: #1919E6;">Cotizaciones</h1>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-sm">
+    <div class="col-sm" style="text-align: center;">
         <p>
             <a href="<?php echo BASE_URL ?>/?p=nueva_cotizacion" class="btn btn-success">
                 <i class="fa fa-plus"></i> Nueva cotización

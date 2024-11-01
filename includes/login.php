@@ -1,18 +1,46 @@
 <?php
 $tokenCSRF = Utiles::obtenerTokenCSRF();
 ?>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+    <style>
+        /* Estilo adicional para el contenedor y título */
+        h2 {
+            color: #1919E6;
+            text-align: center;
+            font-family: 'Arial Black', sans-serif;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
 
-<div class="row" style="margin-top: 1%;">
-    <div class="col-sm-12 col-lg-4 offset-lg-4">
-        <h2 style="color: #007BFF;">Inicio de sesión</h2>
-    </div>
-</div>
-<div class="row" id="app">
-    <div class="col-sm-12 col-lg-4 offset-lg-4">
+        .row {
+            margin-top: 1%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .col-sm-12, .col-lg-4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 255);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+</head>
+    <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <h2>Inicio de sesión</h2>
+        </div>
+    </div>      
+
+<div class="row">
+    <div class="col-sm-12 col-lg-4">
         <form ref="form" method="post" action="<?php echo BASE_URL ?>/?p=iniciar_sesion">
             <input type="hidden" name="tokenCSRF" value="<?php echo $tokenCSRF ?>">
             <div class="form-group">
@@ -37,7 +65,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
                         Inicia sesión para acceder al contenido
                     <?php } ?>
                     <?php if ($_GET["mensaje"] == "3") { ?>
-                        Sesión cerrada, vuelve pronto
+                        Sesión cerrada
                     <?php } ?>
                 </div>
             <?php } ?>
@@ -47,3 +75,5 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
         </form>
     </div>
 </div>
+</body>
+</html>
