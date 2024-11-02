@@ -1,6 +1,6 @@
 ; <?php exit; ?>
 
-; URL base del proyecto, algo como https://sitio.com
+
 ; BASE_URL = "http://localhost/cotizacion"
 BASE_URL = "https://electrotech.lat"
 
