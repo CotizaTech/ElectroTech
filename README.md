@@ -8,3 +8,6 @@ Es un sistema para cotizaciones que utiliza _PHP_, el framework _Bootstrap 4_ pa
 Base de datos de MySQL o MariaDB. El esquema está en _esquema.sql_  
   
 ![alt text](image.png)
+
+
+<!-- Security scan triggered at 2025-10-08 08:50:27 -->
